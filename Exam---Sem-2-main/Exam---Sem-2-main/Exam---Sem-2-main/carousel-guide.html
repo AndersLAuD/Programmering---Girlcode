@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Link til eget stylesheet -->
+    <link rel="stylesheet" href="bootstrap-style.css">
+    <!-- Link til google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <title>Girlcode</title>
+  </head>
+  <body>
+
+    <!-- NAVBAR SECTION -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img style="width: 20lvh;" src="images/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Guides
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="navbar-guide.html">Navigation bar</a></li>
+                  <li><a class="dropdown-item" href="carousel-guide.html">Carousel</a></li>
+                  <li><a class="dropdown-item" href="hosting-guide.html">Hosting</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="index.html">Other guides</a></li>
+                </ul>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About us</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- HEADLINE SECTION -->
+
+      <div class="container mt-5 mb-5">
+        <h1 class="text-center">CAROUSEL</h1>
+        <p>Welcome to our guide on how to code a carousel! A carousel, also known as a slider, is a rotating set of images or content that can add a dynamic and interactive element to your website. This tutorial will walk you through creating a simple, functional carousel using HTML, CSS, and JavaScript.</p>
+    </div>
+
+
+      <!-- ELABORATION SECTION 1 -->
+
+      <div class="container mb-3">
+        <h1 class="text-center">ELABORATION</h1>
+
+        <!-- Carousel-guide prereq -->
+        <h3>Prerequisites</h3>
+        <p>
+          Before we start, ensure you have the following skills and tools:
+
+                <!-- Carousel-guide Skills Required-->
+          <h5>Skills Required:</h5>
+            <li>Basic knowledge of HTML, CSS, and JavaScript.</li> <br>
+
+                <!-- Carousel-guide Tools and Libaries-->
+          <h5>Tools and Libraries:</h5>
+            <li>A text editor (e.g., VS Code, Sublime Text).</li>
+            <li>Basic understanding of web development.</li>
+            <br>
+      </p>
+
+
+        <!-- Carousel-guide Setting up the enviroment-->
+        <h3>Setting Up the Environment</h3><br>
+        <h5>Project Structure</h5>
+        <p>
+          Create a new folder for your project and organize it as follows:
+          <img id="carousel-image" class="mb-5" src="images/carousel/carousel_structure.png" alt="">
+          </p>
+          <h5>HTML Boilerplate</h5>
+            <li>Start by setting up a basic HTML structure in index.html:</li> <br>
+            <img id="carousel-image" class="mb-5" src="images/carousel/index_html.png" alt="">
+
+
+          <!-- Carousel-guide HTML Markup-->
+          <h3>HTML Markup</h3>
+          <h5>Creating the Carousel Structure</h5>
+          <p>Add the following HTML inside the <code>&lt;body&gt;</code> tags to define the structure of the carousel:</p>
+          <img id="carousel-image" class="mb-5" src="images/carousel/body_html.png" alt="">
+
+          <!-- Carousel-guide Styling with CSS-->
+          <h3>Styling with CSS</h3>
+          <h5>Basic Styles</h5>
+          <p>Create a styles.css file and add the following CSS to style the carousel:</p>
+          <img id="carousel-image" class="mb-5" src="images/carousel/css_style.png" alt="">
+
+          <!-- Carousel-guide Adding JavaScript Functionality-->
+          <h3>Adding JavaScript Functionality</h3>
+          <h5>Basic Functionality</h5>
+          <p>Create a script.js file and add the following JavaScript to handle the carousel functionality:</p>
+          <img id="carousel-image" class="mb-5" src="images/carousel/javascript.png" alt="">
+
+          <!-- Carousel-guide Enhancements-->
+          <h3>Enhancements</h3>
+          <h5>Auto-Sliding</h5>
+          <p>To add auto-sliding functionality, modify your JavaScript as follows:</p>
+
+          <img id="carousel-image" class="mb-5" src="images/carousel/auto_slider.png" alt="">
+          <h5>Indicators</h5>
+          <p>Add indicators for each slide and update your HTML and JavaScript:</p>
+          <p>Html:</p>
+          <img id="carousel-image" class="mb-5" src="images/carousel/Indicator_html.png" alt="">
+          <p>JavaScript:</p>
+          <img id="carousel-image" class="mb-5" src="images/carousel/Indicator_js.png" alt="">
+
+          <!-- Carousel-guide Advanced Features-->
+          <h3>Advanced Features</h3>
+          <h5>Using a Library</h5>
+          <p>For more advanced carousels, consider using libraries like Slick, Swiper, or Bootstrap. Here’s a brief example using Bootstrap’s carousel component:
+          </p>
+          <h5>1. Include Bootstrap:</h5>
+          <p>Add the following in the <code>&lt;head&gt;</code> section of your HTML file:</p>
+          <img id="carousel-image" class="mb-5" src="images/carousel/bootstrap_html_head.png" alt="">
+          <h5>2. Bootstrap Carousel Markup:</h5>
+          <img id="carousel-image" class="mb-5" src="images/carousel/bootstrap_html_body.png" alt="">
+
+          <!-- Carousel-guide What the final code should look like-->
+          <h2 class="text-center mb-3">What the final code should look like with bootstrap</h2>
+          <img id="carousel-image" class="mb-5" src="images/carousel/bootstrap_html_code.png" alt="">
+      </div>
+
+
+      <!-- ELABORATION SECTION 2 -->
+
+      <div class="about w-100 py-5 mb-5">
+        <div class="container">
+          <h3 class="mb-3">Troubleshooting</h3>
+          <h5>Common issues</h5>
+         <li>Images not displaying:</li>
+         <p>Ensure the image paths are correct and the images are in the appropriate directory.</p>
+         <li>Carousel not sliding:</li>
+         <p>Check for JavaScript errors in the console and ensure all event listeners are correctly attached.</p>
+         <h5>Debugging Tips</h5>
+         <li>Use browser developer tools to inspect the carousel elements and check for CSS or JavaScript issues.</li>
+         <li>Log JavaScript variables and events to the console to trace the flow of your code.</li>
+         <br>
+         <h3>Conclusion</h3>
+         <p>Congratulations! You have successfully created a functional carousel. This guide covered the basics of setting up the HTML, CSS, and JavaScript for a simple carousel, as well as some enhancements to make it more interactive.</p>
+        </div>
+      </div>
+
+      <img id="carousel-image" class="mb-5" src="images/carousel-example.png" alt="">
+
+      <!-- VIDEO SECTION -->
+
+      <div class="container">
+        <h1 class="text-center mb-3">VIDEO GUIDE</h1>
+        <h3 class="text-center mb-5">Another way to code it</h3>
+      </div>
+
+      <div class="container">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/ToD0ykg3f44" allowfullscreen></iframe>
+          </div>
+      </div>
+
+      
+
+      
+
+      <!-- QUIZ SECTION -->
+
+      <div class="container my-5">
+        <div class="quiz w-100 py-5 rounded-3">
+                <h3 class="mb-3 px-5">Want to test yourself? <br>
+                    Take our quiz here!</h3>
+                    <button class="mx-5"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeG7waVUPSOo1knU2PN5hnUKNpuMGR3UHAaNuXa-iKwUBMpBA/viewform?usp=sf_link" target="_blank">Quiz yourself</a></button>
+          </div>
+      </div>
+
+      
+      
+
+      
+
+
+
+      <!-- FOOTER SECTION -->
+
+      <footer class="footer text-center text-lg-start mt-5">
+        <div class="container d-flex justify-content-center pt-5">
+            <h5>© 2024 Girlcode</h5>
+        </div>
+        <div class="container d-flex justify-content-center">
+            <p>Follow us on social media:</p>
+        </div>
+        <div class="container d-flex justify-content-center pb-5">
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff00; border-color: #ffffff00; color: #006798;">
+            <i class="bi bi-facebook"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff00; border-color: #ffffff00; color: #006798;">
+            <i class="bi bi-instagram"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff00; border-color: #ffffff00; color: #006798;">
+            <i class="bi bi-tiktok"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff00; border-color: #ffffff00; color: #006798;">
+            <i class="bi bi-youtube"></i>
+          </button>
+        </div>
+      </footer>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

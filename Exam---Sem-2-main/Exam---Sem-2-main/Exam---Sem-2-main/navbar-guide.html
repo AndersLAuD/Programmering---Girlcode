@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Link til eget stylesheet -->
+    <link rel="stylesheet" href="bootstrap-style.css">
+    <!-- Link til google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <title>Girlcode</title>
+  </head>
+  <body>
+
+    <!-- NAVBAR SECTION -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img style="width: 20lvh;" src="images/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Guides
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="navbar-guide.html">Navigation bar</a></li>
+                  <li><a class="dropdown-item" href="carousel-guide.html">Carousel</a></li>
+                  <li><a class="dropdown-item" href="hosting-guide.html">Hosting</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="index.html">Other guides</a></li>
+                </ul>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About us</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- HEADLINE SECTION -->
+
+      <div class="container mt-5 mb-5">
+        <h1 class="text-center">NAVIGATION BAR</h1>
+        <p>Welcome to our comprehensive guide on coding a navigation bar! Navigation bars are a fundamental part of web design, providing users with an intuitive way to explore your site. In this tutorial, we'll dive into the different types of navigation bars, their importance, and step-by-step instructions on creating them from scratch</p>
+    </div>
+
+      <!-- ELABORATION SECTION 1 -->
+
+      <div class="container mb-5">
+        <h1 class="text-center">ELABORATION</h1>
+        <!-- Navbar-guide -->
+        <h3>Basic Structure:</h3>
+        <p>A navigation bar, or navbar, is typically a collection of links guiding users to various sections of a website. Here’s the basic HTML structure for a simple navigation bar:</p>
+        <img id="navbar-image" class="mb-5" src="images/navbar/Nav_html.png" alt="">
+        <p>
+          <ul>
+          <li><code>&lt;nav&gt;</code> tag: Defines the navigation section.</li>
+          <li><code>&lt;ul&gt;</code> tag: Represents an unordered list of links.</li>
+          <li><code>&lt;li&gt;</code> tag: Each list item within the unordered list.</li>
+          <li><code>&lt;a&gt;</code>; tag: Anchor tags represent the actual links.</li>
+          </ul>
+          </p>
+          
+          <img id="navbar-image" class="mb-5" src="images/navbar/Nav_uden_css.png" alt="">
+          <p>This is how the navigation bar should look so far</p>
+
+          <!-- Navbar-guide Styling the Navbar-->
+            <h3>Styling the Navbar</h3>
+            <p>Styling the navigation bar is crucial for making it visually appealing and user-friendly. Below is a basic CSS example to style the navbar:</p>
+            <img id="navbar-image" class="mb-5" src="images/navbar/css_navstyle.png" alt="">
+            <p>
+              <ul>
+                  <li><code>background-color</code>: Sets the background color of the navigation bar.</li>
+                  <li><code>list-style-type</code>: Removes default list styling.</li>
+                  <li><code>overflow: hidden</code>: Ensures the content stays within the navbar.</li>
+                  <li><code>float: left</code>: Aligns the list items horizontally.</li>
+                  <li><code>text-align: center</code>: Centers the text within each link.</li>
+                  <li><code>:hover</code>: Changes the background color when the user hovers over a link.</li>
+              </ul>
+          </p>
+          <!-- Navbar-guide Responsive Design-->
+          <h3>Responsive Design</h3>
+          <p>A responsive navigation bar adapts to different screen sizes, enhancing the user experience across devices. Media queries are used to achieve this:</p>
+          <ul>
+            <li><code>@media screen and (max-width: 600px)</code>: Applies styles for screens 600px wide or smaller.</li>
+            <li><code>float: none</code>: Stacks the menu items vertically on smaller screens.</li>
+        </ul>
+        <img id="navbar-image" class="mb-5" src="images/navbar/responsive_design.png" alt="">
+        <!-- Navbar-guide Advanced Features-->
+        <h3>Advanced Features</h3>
+        <p>Enhance your navigation bar with dropdown menus for a more interactive experience.</p>
+        <p>HTML for Dropdown</p>
+        <img id="navbar-image" class="mb-5" src="images/navbar/html_dropdown.png" alt="">
+        <p>CSS for Dropdown</p>
+        <img id="navbar-image" class="mb-5" src="images/navbar/css_dropdown.png" alt="">
+        <p>
+          <ul>
+              <li><code>position: absolute</code>: Positions the dropdown content absolutely within its container.</li>
+              <li><code>list-style-type</code>: Sets a minimum width for the dropdown content.</li>
+              <li><code>overflow: hidden</code>: Adds a shadow effect for depth.</li>
+              <li><code>float: left</code>: Displays the dropdown content when hovering over the dropdown button.</li>
+          </ul>
+      </p>
+        <!-- Navbar-guide JavaScript Enchancements-->
+      <h3>JavaScript Enhancements</h3>
+      <p>For dynamic interaction, JavaScript can be used to toggle dropdown visibility on click:</p>
+      <img id="navbar-image" class="mb-5" src="images/navbar/Java_script_ench.png" alt="">
+      <p>
+        <ul>
+            <li><code>querySelector</code>: Selects the dropdown element.</li>
+            <li><code>addEventListener</code>: Adds an event listener for the 'click' event.</li>
+            <li><code>classList.toggle</code>: Toggles the 'show' class on the dropdown content.</li>
+        </ul>
+      </p>
+
+        <!-- Navbar-guide Accessibility Considerations-->
+      <h3>Accessibility Considerations</h3>
+      <p>Accessibility is crucial for ensuring that your navigation bar is usable by everyone, including those with disabilities. Use ARIA roles and properties to enhance accessibility:</p>
+      <img id="navbar-image" class="mb-5" src="images/navbar/acc_con.png" alt="">
+      <p>
+        <ul>
+            <li><code>role="navigation</code>: Defines the section as a navigation region.</li>
+            <li><code>aria-label</code>: Provides an accessible name for the link.</li>
+        </ul>
+      </p>
+
+
+    </div>
+
+      <!-- ELABORATION SECTION 2 -->
+
+      <div class="about w-100 py-5 mb-5">
+        <div class="container">
+          <!-- Navbar-guide Examples-->
+            <h3 class="mb-3">Examples</h3>
+            <p>Explore different styles of navigation bars and download ready-to-use templates to get started quickly: <br> 
+              <ul>
+                <li>Horizontal Navbars</li>
+                <li>Vertical Navbars</li>
+                <li>Fixed and Sticky Navbars</li>
+              </ul>
+            </p>
+        </div>
+
+        <div class="container">
+          <!-- Navbar-guide Troubleshooting-->
+          <h3 class="mb-3">Troubleshooting</h3>
+          <p>Having trouble with your navigation bar? Here are solutions to common issues: <br> 
+            <ul>
+              <li>Links not aligning correctly: Check your CSS float and padding values.</li>
+              <li>Dropdown not working: Ensure JavaScript is properly linked and debug any errors.</li>
+              <li>Responsive design issues: Verify your media queries are correctly set up.</li>
+            </ul>
+          </p>
+      </div>
+
+      <div class="container">
+        <!-- Navbar-guide Conclusion-->
+        <h3 class="mb-3">Conclusion</h3>
+        <p>Having trouble with your navigation bar? Here are solutions to common issues: <br> 
+          In this guide, we’ve covered the essentials and advanced features of creating a navigation bar. By following these steps, you can build a user-friendly and visually appealing navbar for your website. Ready for more? Check out our next topic on building responsive layouts and further enhance your web design skills!
+        </p>
+    </div>
+
+      </div>
+
+        <img id="navbar-image" class="mb-5" src="images/navbar-example.png" alt="">
+
+      <!-- VIDEO SECTION -->
+
+      <div class="container">
+        <h1 class="text-center mb-3">VIDEO GUIDE</h1>
+        <h3 class="text-center mb-5">Another way to code it</h3>
+      </div>
+
+      <div class="container">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/MgAFnTjESAE" allowfullscreen></iframe>
+          </div>
+      </div>
+
+      <!-- QUIZ SECTION -->
+
+      <div class="container my-5">
+        <div class="quiz w-100 py-5 rounded-3">
+                <h3 class="mb-3 px-5">Want to test yourself? <br>
+                    Take our quiz here!</h3>
+                    <button class="mx-5"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfChXXVB4toAUPBGkdfxEa6pLSLcStxj2IYOoUorhfvRNhbyA/viewform?usp=sf_link" target="_blank">Quiz yourself</a></button>
+          </div>
+      </div>
+
+      
+      
+
+      
+
+
+
+      <!-- FOOTER SECTION -->
+
+      <footer class="footer text-center text-lg-start mt-5">
+        <div class="container d-flex justify-content-center pt-5">
+            <h5>© 2024 Girlcode</h5>
+        </div>
+        <div class="container d-flex justify-content-center">
+            <p>Follow us on social media:</p>
+        </div>
+        <div class="container d-flex justify-content-center pb-5">
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff00; border-color: #ffffff00; color: #006798;">
+            <i class="bi bi-facebook"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff00; border-color: #ffffff00; color: #006798;">
+            <i class="bi bi-instagram"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff00; border-color: #ffffff00; color: #006798;">
+            <i class="bi bi-tiktok"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff00; border-color: #ffffff00; color: #006798;">
+            <i class="bi bi-youtube"></i>
+          </button>
+        </div>
+      </footer>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
